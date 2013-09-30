@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/css" href="styles/MikeXielab2part4.css"?>
+<playlist xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">
+	
+	<song>
+		<trackname>Yeah!</trackname>
+		<artist>Akon</artist>
+		<albumname>Konvicted</albumname>
+		<releasedate>November 21, 2006</releasedate>
+		<genre>R&amp;B,Rap</genre>
+		<artistlink 
+		xlink:type="simple"
+		xlink:href="https://myspace.com/akon"
+		xlink:show="new">
+		How about this?
+		</artistlink>
+		<artistlink><html:a href="https://myspace.com/akon">https://myspace.com/akon</html:a></artistlink>
+		<albumcover><html:img src="album%20covers/Konvicted.jpg"></html:img></albumcover>
+	</song>
+	
+	<song>
+		<trackname>Misery</trackname>
+		<artist>Maroon 5</artist>
+		<albumname>Hands All Over</albumname>
+		<releasedate>September 20, 2010</releasedate>
+		<genre>Pop,Rock</genre>
+		<artistlink><html:a href="http://www.maroon5.com/home">http://www.maroon5.com/home</html:a></artistlink>
+		<albumcover><html:img src="album%20covers/Hands%20All%20Over.jpg"></html:img></albumcover>
+	</song>
+	
+	<song>
+		<trackname>Love To Be Loved By You</trackname>
+		<artist>Marc Terenzi</artist>
+		<albumname>Love To Be Loved By You</albumname>
+		<releasedate>September 5, 2005</releasedate>
+		<genre>Unknown</genre>
+		<artistlink><html:a href="www.myspace.com/marcterenzi">www.myspace.com/marcterenzi</html:a></artistlink>
+		<albumcover><html:img src="album%20covers/Love%20To%20Be%20Loved%20By%20You.jpg"></html:img></albumcover>
+	</song>
+	
+	<song>
+		<trackname>Nocturne</trackname>
+		<artist>Jay Chou</artist>
+		<albumname>November's Chopin</albumname>
+		<releasedate>November 1, 2005</releasedate>
+		<genre>Unknown</genre>
+		<artistlink><html:a href="http://jaychoustudio.com">http://jaychoustudio.com</html:a></artistlink>
+		<albumcover><html:img src="album%20covers/November's%20Chopin.jpg"></html:img></albumcover>		
+	</song>
+	
+</playlist>
+
+<!-- playlist is the root element, which contains four song elements, which in term contain their respective information abou that song -->

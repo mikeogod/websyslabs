@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Favorite Songs</title>
+  <link rel="stylesheet" type="text/css" href="styles/MikeXie-lab2part3.css"/>
+</head>
+<body>
+    <div class="center">
+      <h1>My Favorite Songs</h1>
+      <table id="myplaylist">
+        <tr class="odd">
+          <td>Track Name</td>
+          <td>Artist</td>
+          <td>Album Name</td>
+          <td>Release Date</td>
+          <td>Genre</td>
+          <td>Link to Artist's Site</td>
+          <td>Album Cover</td>
+        </tr>
+        <tr class="even">
+          <td class="trackname">Yeah!</td>
+          <td class="artist">Akon</td>
+          <td class="albumname">Konvicted</td>
+          <td class="releasedate">November 21, 2006</td>
+          <td class="genre"><ul><li>R&amp;B,Rap</li></ul></td>
+          <td class="artistlink"><a href="https://myspace.com/akon">https://myspace.com/akon</a></td>
+          <td class="albumcover"><img width=100 height=100 src="album%20covers/Konvicted.jpg" alt="Not Found"></td>
+        </tr>
+        <tr class="odd">
+          <td class="trackname">Misery</td>
+          <td class="artist">Maroon 5</td>
+          <td class="albumname">Hands All Over</td>
+          <td class="releasedate">September 20, 2010</td>
+          <td class="genre"><ul><li>Pop,Rock</li></ul></td>
+          <td class="artistlink"><a href="http://www.maroon5.com/home">http://www.maroon5.com/home</a></td>
+          <td class="albumcover"><img width=100 height=100 src="album%20covers/Hands%20All%20Over.jpg" alt="Not Found"></td>
+        </tr>
+        <tr class="even">
+          <td class="trackname">Love To Be Loved By You</td>
+          <td class="artist">Marc Terenzi</td>
+          <td class="albumname">Love To Be Loved By You</td>
+          <td class="releasedate">September 5, 2005</td>
+          <td class="genre"><ul><li>Unknown</li></ul></td>
+          <td class="artistlink"><a href="www.myspace.com/marcterenzi">www.myspace.com/marcterenzi</a></td>
+          <td class="albumcover"><img width=100 height=100 src="album%20covers/Love%20To%20Be%20Loved%20By%20You.jpg" alt="Not Found"></td>
+        </tr>
+        <tr class="odd">
+          <td class="trackname">Nocturne</td>
+          <td class="artist">Jay Chou</td>
+          <td class="albumname">November's Chopin</td>
+          <td class="releasedate">November 1, 2005</td>
+          <td class="genre"><ul><li>Unknown</li></ul></td>
+          <td class="artistlink"><a href="http://jaychoustudio.com">http://jaychoustudio.com</a></td>
+          <td class="albumcover"><img width=100 height=100 src="album%20covers/November's%20Chopin.jpg" alt="Not Found"></td>
+        </tr>
+        <tr class="even"><td colspan="7">End of list</td></tr>
+      </table>
+    </div>
+    <script>
+    
+    function change_row_color(col, event)
+    {
+    	row=col.parentNode;
+    	if(event=="mouseover")
+    	{
+    		row.style.backgroundColor="rgb(200,100,100)";
+    	}
+    	else if(event=="mouseout")
+    	{
+    		if(row.className=="even")
+    			row.style.backgroundColor="rgb(220, 220, 220)";
+    		else
+    			row.style.backgroundColor="azure";
+    	}
+    	else if(event=="mousedown")
+    	{
+    		row.style.backgroundColor="white";
+    	}
+    	else if(event=="mouseup")
+    	{
+    		if(row.className=="even")
+    			row.style.backgroundColor="rgb(220, 220, 220)";
+    		else
+    			row.style.backgroundColor="azure";
+    	}
+    }
+    var table=document.getElementById('myplaylist');
+	  var rows=table.getElementsByTagName('TR');
+	  for(var i=0; i!=rows.length; i++)
+	  {
+		  rows[i].addEventListener("mouseover", function(e){change_row_color(e.target, "mouseover");}, false); 
+		  rows[i].addEventListener("mouseout", function(e){change_row_color(e.target, "mouseout");}, false); 
+		  rows[i].addEventListener("mousedown", function(e){change_row_color(e.target, "mousedown");}, false);
+		  rows[i].addEventListener("mouseup", function(e){change_row_color(e.target, "mouseup");}, false);
+	  }
+    </script>
+</body>
+</html>
+
+<!-- 
+Putting the data in table tags keeps them nicely formated, and it also makes it easy to adjust 
+spacings between texts and to group them when it comes to editing the document. It is much easier to maintain than using list
+-->

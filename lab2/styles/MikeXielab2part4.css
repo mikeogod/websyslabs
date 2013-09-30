@@ -1,0 +1,40 @@
+img{
+	width:100px;
+	height:100px;
+}
+
+song{
+	display: block;
+	margin: 20px;
+}
+
+trackname{
+	display: list-item;
+}
+
+artist{
+	display: list-item;
+	color: blue;
+	font-size: 120%;	
+}
+
+albumname{
+	display: list-item;
+	font-style: italic;
+}
+
+albumcover{
+	display: list-item;
+}
+
+releasedate{
+	display: list-item;
+}
+
+genre{
+	display: list-item;
+}
+
+artistlink{
+	display: list-item;
+}

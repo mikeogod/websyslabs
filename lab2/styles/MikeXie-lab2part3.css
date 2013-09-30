@@ -1,0 +1,73 @@
+@CHARSET "ISO-8859-1";
+
+.center {
+	width: 70%;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+table  {
+	border: ridge rgb(0,255,255);
+	border-spacing: 0px 2px;
+}
+
+th {
+	border-bottom: ridge rgb(0,255,255);
+}
+
+tr {
+	height: 50px;
+}
+
+tr:last-child {
+	height: 30px;
+	font-size: 80%;
+}
+
+tr:last-child td{
+	text-align: center;
+	font-style: italic;
+}
+
+.odd {
+	background-color: azure;
+}
+
+.even {
+	background-color: rgb(220,220,220);
+}
+
+td {
+	text-align: center;
+	width: 400px;
+	cell-spacing:2px 0px 2px 0px;
+}
+
+.trackname
+{
+	font-variant: small-caps;
+	color: green;
+}
+
+.artist
+{
+	font-weight: bold;
+}
+
+.albumname
+{
+	font-style: italic;
+}
+
+.releasedate
+{
+	font-size: 90%;
+}
+
+.genre
+{
+	font-size: 90%;
+	list-style-position:inside;
+}
+
+/* Each piece of information about the song has its own class name to seperate their stylings*/
