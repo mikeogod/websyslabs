@@ -1,0 +1,52 @@
+{
+	"songs":[
+		{
+			"track name":"Yeah!",
+			"artist":"Akon",
+			"album":"Konvicted",
+			"album cover url":"http://lab2.websys/album%20covers/Konvicted.jpg",
+			"date":"November 21, 2006",
+			"artist site url":"https://myspace.com/akon",
+			"genres":[
+				{"name":"R&amp;B"},
+				{"name":"Rap"}
+			]
+		},
+		{
+			"track name":"Misery",
+			"artist":"Maroon 5",
+			"album":"Hands All Over",
+			"album cover url":"http://lab2.websys/album%20covers/Hands%20All%20Over.jpg",
+			"date":"September 20, 2010",
+			"artist site url":"http://www.maroon5.com/home",
+			"genres":[
+				{"name":"Pop"},
+				{"name":"Rock"}
+			]
+		},
+		{
+			"track name":"Love To Be Loved By You",
+			"artist":"Marc Terenzi",
+			"album":"Love To Be Loved By You",
+			"album cover url":"http://lab2.websys/album%20covers/Love%20To%20Be%20Loved%20By%20You.jpg", 
+			"date":"September 5, 2005",
+			"artist site url":"http://www.myspace.com/marcterenzi",
+			"genres":[
+				{"name":"Unknown"}
+			]
+		},
+		{
+			"track name":"Nocturne",
+			"artist":"Jay Chou",
+			"album":"November's Chopin",
+			"album cover url":"http://lab2.websys/album%20covers/November's%20Chopin.jpg",
+			"date":"November 1, 2005",
+			"artist site url":"http://jaychoustudio.com",
+			"genres":[
+				{"name":"Unknown"}
+			]
+		}
+	
+	]
+
+}

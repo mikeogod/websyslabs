@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lecture #9 - jQuery .get()</title>
+  </head>
+  <body>
+    <div id="change-me">
+      <p>This text will be replaced after making an AJAX request and replacing 
+      this div with the response received.</p>
+      <a id="trigger" href="#">Make It So</a>
+    </div>
+    <!-- Include jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+      // We'll make this request in the onclick event handler for #trigger.
+      $('#trigger').click(function(e) {
+        // Make a GET request to the given URL.
+        // In the callback, we'll manipulate the response. This callback accepts
+        // three arguments: the data, the status, and a jQuery-enhanced
+        // XMLHttpRequest object. For now, we just need the data.
+        $.get('http://websys/lab4/example.json', function(data) {
+        	alert(data);
+          // In this example, we're hiding the element first, and then replacing
+          // the contents of #change-me only after the content is hidden, at
+          // which point it will be shown again. This is another example of
+          // using callbacks to ensure that functions are executed one after
+          // the other, as opposed to immediately.
+          $('#change-me').hide(600, function() { 
+            // The keyword "this" refers to the current element, #change-me.
+            // Below, we're replacing the HTML within #change-me with the data
+            // being passed in through our AJAX callback, and then showing it.
+            $(this).html(data).show(600); 
+          });
+          //$(this).html(data);
+        });
+      });
+    </script>
+  </body>
+</html>

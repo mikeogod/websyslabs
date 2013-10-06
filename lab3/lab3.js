@@ -28,7 +28,6 @@ function domIterate(current, depth){
 			{
 				var new_node=current.cloneNode();
 				new_node.innerHTML=current.innerHTML;
-				alert(current.innerHTML);
 				new_node.setAttribute("class", "new quote");
 				document.getElementsByTagName("BODY")[0].appendChild(new_node);
 				document.getElementsByTagName("BODY")[0].lastChild.addEventListener('mouseover',function(e){

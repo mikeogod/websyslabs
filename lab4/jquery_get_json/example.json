@@ -1,0 +1,25 @@
+{
+  "people" : [
+    { 
+      "name": "Dave",
+      "rin": 42,
+      "staff": true,
+      "profession": "Web Developer",
+      "hairColor": ["blonde", "platinum", "silver"]
+    },
+    { 
+      "name": "Alice",
+      "rin": 1,
+      "staff": false,
+      "profession": "SysAdmin",
+      "hairColor": ["brown"]
+    },
+    { 
+      "name": "Bob",
+      "rin": 5,
+      "staff": false,
+      "profession": "Baker",
+      "hairColor": ["black"]
+    }
+  ]
+}

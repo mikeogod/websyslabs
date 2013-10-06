@@ -1,0 +1,4 @@
+<p>This is a snippet of HTML. You could feasibly read from an entire HTML 
+document, or even an XML or JSON file, but for illustrative purposes this
+will do just fine. The only difference is what you do with the response after
+you receive it.</p>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lecture #9 - jQuery .load()</title>
+  </head>
+  <body>
+    <div id="change-me">
+      <p>This text will be replaced after making an AJAX request and replacing 
+      this div with the response received.</p>
+      <a id="trigger" href="#">Make It So</a>
+    </div>
+    <!-- Include jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+      // We'll make this request in the onclick event handler for #trigger.
+      $('#trigger').click(function(e) {
+        // Make a GET request to the given URL, and replace the contents of #change-me with the response.
+        $('#change-me').load('../snippet.txt')
+      });
+    </script>
+  </body>
+</html>

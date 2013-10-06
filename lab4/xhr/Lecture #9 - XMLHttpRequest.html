@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lecture #9 - XMLHttpRequest</title>
+  </head>
+  <body>
+    <div id="change-me">
+      <p>This text will be replaced after making an AJAX request and replacing 
+      this div with the response received.</p>
+      <a id="trigger" href="#">Make It So</a>
+    </div>
+    <script>
+      // We'll make this request in the onclick event handler for #trigger.
+      document.getElementById('trigger').onclick = function(e) {
+
+        // Create a new XMLHttpRequest object to handle the request.
+        // Note that IE6 and below will need this object to be created
+        // as an ActiveXObject. Use feature detection to determine which.
+        var xhr = new XMLHttpRequest();
+      
+        // We want to make an asynchronous GET request to the given URL.
+        // We'll start by initializing the request using the open() method.
+        xhr.open('GET', "../snippet.txt", true)
+
+        // Let's define our event handler before sending the request off. For
+        // this example, we want to know when the readyState changes, and if a
+        // valid response was received once finished, we want to use it.
+        xhr.onreadystatechange = function() {
+          // Remember, we still have access to xhr in this scope.
+
+          // If we have a complete response...
+          if (xhr.readyState == 4) {
+            // ...and that response was 200 OK...
+            if (xhr.status == 200) {
+              // ...Replace #change-me with the contents of the response body.
+              document.getElementById('change-me').innerHTML = xhr.responseText;
+            }
+            // Otherwise, something went wrong.
+            else {
+              alert("Something went wrong...");
+            }
+          }
+        }
+
+        // If we wanted to set additional HTTP headers, we would do so using the
+        // setRequestHeader() method here. Since we don't, we can simply send 
+        // the request. Note that we don't need to send any data in the request 
+        // body, either; otherwise we would pass it as a parameter to send().
+        xhr.send();
+
+      };
+    </script>
+  </body>
+</html>

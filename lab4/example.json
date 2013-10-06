@@ -1,0 +1,25 @@
+{
+  "people" : [
+    { 
+      "name": "Rick",
+      "rin": 12,
+      "staff": true,
+      "profession": "Technologist",
+      "hairColor": ["brown", "red", "going away"]
+    },
+    { 
+      "name": "Han",
+      "rin": 51,
+      "staff": false,
+      "profession": "TA",
+      "hairColor": ["brown"]
+    },
+    { 
+      "name": "Professor Hughes",
+      "rin": 5,
+      "staff": true,
+      "profession": "Boss man",
+      "hairColor": ["silver"]
+    }
+  ]
+}
